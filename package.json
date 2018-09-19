@@ -1,8 +1,8 @@
 {
-    "title": "New Age",
-    "name": "startbootstrap-new-age",
-    "version": "5.0.0",
-    "description": "A one page app landing page HTML theme for Bootstrap.",
+    "title": "Sushi",
+    "name": "Sushi",
+    "version": "1.0.0",
+    "description": "Sushi",
     "keywords": [
         "css",
         "sass",
@@ -11,20 +11,8 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/new-age",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age/issues",
-        "email": "feedback@startbootstrap.com"
-    },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
-    },
+    "author": "Maciek",
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.3.1",
         "bootstrap": "4.1.3",

@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - New Age v5.0.0 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ * Start Bootstrap - Sushi v1.0.0 ()
+ * Copyright 2013-2018 Maciek
+ * Licensed under MIT (https://github.com/BlackrockDigital/Sushi/blob/master/LICENSE)
  */
 
 html,
@@ -393,8 +393,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-primary {
+  background-color: #fdcc52;
+  border-color: #fdcc52;
+  color: #7b4397;
+}
+
+.btn-primary:hover {
+  color: #fdcc52;
   background-color: #7b4397;
-  border-color: #7b4397;
 }
 
 .btn-xl {
