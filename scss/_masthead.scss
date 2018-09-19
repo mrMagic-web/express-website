@@ -1,24 +1,35 @@
 // Styling for the masthead
 header.masthead {
     position: relative;
-
     width: 100%;
     padding-top: 150px;
     padding-bottom: 100px;
 
+    .device-container {
+        img {
+            max-width: 450px;
+            margin: auto;
+            display: block;
+        }
+    }
+    h3 {
+        color: $theme-secondary; 
+        font-size: 1.4rem;
+    }
+
     .header-content {
         max-width: 500px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
 
         text-align: center;
         h1 {
-            font-size: 30px;
+            font-size: 1.6rem;
         }
     }
 
     @media (min-width: 992px) {
         height: 100vh;
-        min-height: 775px;
+        min-height: 500px;
         padding-top: 0;
         padding-bottom: 0;
         .header-content {
@@ -26,7 +37,7 @@ header.masthead {
 
             text-align: left;
             h1 {
-                font-size: 50px;
+                font-size: 2.6rem;
             }
         }
     }

@@ -3,6 +3,8 @@
     border-color: fade-out($gray-darker, .95);
     @include transition-all;
     @include heading-font;
+    background: white;
+    border-bottom: 2px solid $theme-primary;
     .navbar-brand {
         @include heading-font;
         &:hover,
@@ -16,9 +18,11 @@
         color: $gray-darker;
     }
     .navbar-nav {
+        padding: 5px;
         > li {
             > a {
                 @include alt-font;
+                font-size: 12px;
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
