@@ -32,8 +32,12 @@
     border-radius: 300px;
     @include alt-font;
 }
-
+.btn-primary {
+    background-color: $theme-secondary;
+    border-color: $theme-secondary;
+}
 .btn-xl {
-    font-size: 11px;
-    padding: 15px 45px;
+    font-size: 12px;
+    padding: 13px 30px;
+    margin: 4px;
 }
