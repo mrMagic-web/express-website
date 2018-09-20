@@ -33,8 +33,13 @@
     @include alt-font;
 }
 .btn-primary {
-    background-color: $theme-secondary;
-    border-color: $theme-secondary;
+    background-color: $theme-primary;
+    border-color: $theme-primary;
+    color: $theme-secondary;
+    &:hover {
+        color: $theme-primary;
+        background-color: $theme-secondary;
+    }
 }
 .btn-xl {
     font-size: 12px;

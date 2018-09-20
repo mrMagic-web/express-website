@@ -4,12 +4,16 @@
     @include transition-all;
     @include heading-font;
     background: white;
+    padding: 4px 10px;
     border-bottom: 2px solid $theme-primary;
     .navbar-brand {
         @include heading-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: $theme-secondary;
+        }
+        .img-fluid {
+            max-width: 90px;
         }
     }
     .navbar-toggler {
@@ -21,10 +25,10 @@
         padding: 5px;
         > li {
             > a {
-                @include alt-font;
-                font-size: 12px;
+                font-weight: 300;
+                font-size: 15px;
                 &.active {
-                    color: $theme-primary !important;
+                    color: $theme-secondary;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
