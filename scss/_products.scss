@@ -1,14 +1,24 @@
 // Styling for the download section
 section.products {
-    position: relative;
-    padding: 150px 0;
+    padding: 100px 0 80px;
+    background-color: $gray-lighter;
     h2 {
         font-size: 50px;
         margin-top: 0;
     }
-    .product-description {
-        padding: 5px;
-        background-color: $theme-dark;
+    h4 {
+        font-size: 1.3rem;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        .description {       
+            padding: 10px 10px 5px;
+            color: $theme-dark;
+        }
+    }
+    hr {
+        border-color: white;
     }
     @media(min-width: 768px) {
         h2 {
