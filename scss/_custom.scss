@@ -1,0 +1,50 @@
+// Styling for the call to action section
+section.custom {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $theme-secondary;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    .custom-content {
+        position: relative;
+        z-index: 1;
+        h2 {
+            font-size: 30px;
+            margin-top: 0;
+            color: $theme-primary;
+        }
+        h4 {
+            color: white;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 50px;
+            }
+        }
+        .btn {
+            border-color: $theme-primary;
+            color: $theme-primary;
+            &:hover, 
+            &:active, 
+            &:focus {
+                color: $theme-secondary; 
+            } 
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: fade-out(black, .5);
+    }
+}

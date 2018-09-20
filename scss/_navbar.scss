@@ -9,7 +9,7 @@
         @include heading-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: $theme-secondary;
         }
     }
     .navbar-toggler {
@@ -24,7 +24,7 @@
                 @include alt-font;
                 font-size: 12px;
                 &.active {
-                    color: $theme-primary !important;
+                    color: $theme-secondary;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;

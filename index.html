@@ -43,7 +43,10 @@
               <a class="nav-link js-scroll-trigger" href="#products">Produkty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#case-studies">Zadowoleni klienci</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#custom">Niestandardowe</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -123,107 +126,115 @@
       </div>
     </section>
 
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section class="case-studies" id="case-studies">
+      <div class="container ">
+        <div class="row text-center section-heading">  
+          <div class="col-md-8 offset-md-2">  
+          <h2 class="text-center">Zadowoleni Klenci</h2>
+            <p class="text-muted text-center">Sushi Home to wyjątkowe miejsce powstałe z zamiłowania do kuchni japońskiej.</p>
+            <hr>
+            <p class="mt-4">Głównym życzeniem Klienta było zredukowanie użycia opakowań z tworzyw sztucznych, dlatego naszym wyzwaniem było zaoferowanie ekologicznej alternatywy dla plastikowych pudełek na sushi.
+              W tym celu stworzyliśmy serię papierowych pudełek na sushi, które z powodzeniem zastąpiły powszechne w gastronomii opakowania z plastiku.</p>
           </div>
         </div>
-      </div>
+            <div class="row mt-4">
+              <div class="col my-auto"><img class="img-fluid" alt="Sushi House" src="./img/sushi_home_2.jpg" /></div>
+              <div class="col my-auto"><img class="img-fluid" alt="Sushi House" src="./img/sushi_home_1.jpg" /></div>
+              <div class="col my-auto"><img class="img-fluid" alt="Sushi House" src="./img/sushi_home_3.jpg" /></div>
+            </div>
+        </div>
     </section>
 
-    <section class="cta">
-      <div class="cta-content">
+    <section class="custom" id="custom">
+      <div class="custom-content">
         <div class="container">
-          <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+          <div class="row">
+            <div class="col">
+              <h2>Opakowanie dopasowane do Ciebie</h2>
+              <h4>Twój biznes wymaga nowatorskich rozwiązań? Dobrze trafiłeś. Zaprojektujemy i stworzymy opakowania o niestandardowych wzorach, kształtach i rozmiarach</p>
+              <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Napisz czego potrzebujesz!</a>
+            </div>  
+            <div class="col">
+              <img class="img-fluid" src="./img/custom-packages-1.png" alt="Opakowanie dopasowane do Ciebie">
+
+            </div>  
+          </div>
         </div>
       </div>
-      <div class="overlay"></div>
     </section>
 
-    <section class="contact bg-primary" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2>We
-          <i class="fas fa-heart"></i>
+          <i class="fas fa-post"></i>
           new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fab fa-google-plus-g"></i>
-            </a>
-          </li>
-        </ul>
+          <form id="contact-form" method="post" action="contact.php" role="form">
+
+              <div class="messages"></div>
+
+              <div class="controls">
+                  
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_name">Firstname *</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_lastname">Lastname *</label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="form_need">Please specify your need *</label>
+                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                  <option value=""></option>
+                                  <option value="Request quotation">Request quotation</option>
+                                  <option value="Request order status">Request order status</option>
+                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                  <option value="Other">Other</option>
+                              </select>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <input type="submit" class="btn btn-xl btn-secondary btn-send" value="Send message">
+                      </div>
+                  </div>
+              </div>
+
+          </form>
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <p>&copy; Your Website 2018. All Rights Reserved.</p>
+        <p>&copy; <a href="http://www.fastpack.dk/pl">Fastpack.dk</a> <script>
+         document.write(new Date().getFullYear())
+        </script>. All Rights Reserved.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
@@ -244,7 +255,8 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
 

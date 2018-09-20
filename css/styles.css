@@ -79,7 +79,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #cdce00;
+  color: #00adef;
 }
 
 #mainNav .navbar-toggler {
@@ -100,7 +100,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #feff02 !important;
+  color: #00adef;
   background-color: transparent;
 }
 
@@ -132,7 +132,7 @@ header.masthead .device-container img {
 }
 
 header.masthead h3 {
-  color: #FF00FF;
+  color: #00adef;
   font-size: 1.4rem;
 }
 
@@ -243,40 +243,70 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-gradient(linear, right top, left top, from(#FF00FF), to(#ec048e));
-  background: linear-gradient(to left, #FF00FF, #ec048e);
+  background: -webkit-gradient(linear, right top, left top, from(#00adef), to(#ec048e));
+  background: linear-gradient(to left, #00adef, #ec048e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-section.cta {
+section.custom {
   position: relative;
-  padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
-  background-position: center;
-  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #00adef;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-section.cta .cta-content {
+section.custom .custom-content {
   position: relative;
   z-index: 1;
 }
 
-section.cta .cta-content h2 {
-  font-size: 50px;
-  max-width: 450px;
+section.custom .custom-content h2 {
+  font-size: 30px;
   margin-top: 0;
-  margin-bottom: 25px;
+  color: #feff02;
+}
+
+section.custom .custom-content h4 {
   color: white;
 }
 
+section.custom .custom-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
+  section.custom .custom-content h2 {
+    font-size: 50px;
   }
 }
 
-section.cta .overlay {
+section.custom .custom-content .btn {
+  border-color: #feff02;
+  color: #feff02;
+}
+
+section.custom .custom-content .btn:hover, section.custom .custom-content .btn:active, section.custom .custom-content .btn:focus {
+  color: #00adef;
+}
+
+section.custom .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -286,6 +316,7 @@ section.cta .overlay {
 }
 
 section.contact {
+  background-color: #e6e6e6;
   text-align: center;
 }
 
@@ -310,12 +341,12 @@ footer ul {
   margin-bottom: 0;
 }
 
-footer ul li a {
+footer a {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.3);
 }
 
-footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+footer a:hover, footer a:focus, footer a:active, footer a.active {
   text-decoration: none;
 }
 
@@ -356,12 +387,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-primary {
   background-color: #feff02;
   border-color: #feff02;
-  color: #FF00FF;
+  color: #00adef;
 }
 
 .btn-primary:hover {
   color: #feff02;
-  background-color: #FF00FF;
+  background-color: #00adef;
 }
 
 .btn-xl {
