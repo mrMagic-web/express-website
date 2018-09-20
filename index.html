@@ -32,7 +32,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="./img/sushipack_logo.jpg" class="img-fluid">
+        </a>
         <button class="navbar-toggler navbar-toggler-right rounded-0" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -49,7 +51,7 @@
               <a class="nav-link js-scroll-trigger" href="#custom">Niestandardowe</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontact</a>
             </li>
           </ul>
         </div>
@@ -165,10 +167,10 @@
 
     <section class="contact" id="contact">
       <div class="container">
-        <h2>We
-          <i class="fas fa-post"></i>
-          new friends!</h2>
-          <form id="contact-form" method="post" action="contact.php" role="form">
+        <h2>Napisz
+          <i class="fas fa-mail-bulk"></i>
+          do nas!</h2>
+          <form id="contact-form" class="col-md-8 offset-md-2" method="post" action="contact.php" role="form">
 
               <div class="messages"></div>
 
@@ -177,51 +179,30 @@
                   <div class="row">
                       <div class="col-md-6">
                           <div class="form-group">
-                              <label for="form_name">Firstname *</label>
-                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                              <label for="form_name">Imię *</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Imię *" required="required" data-error="Podaj imię.">
                               <div class="help-block with-errors"></div>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_lastname">Lastname *</label>
-                              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                              <div class="help-block with-errors"></div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
                       <div class="col-md-6">
                           <div class="form-group">
                               <label for="form_email">Email *</label>
-                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="E-mail *" required="required" data-error="Podaj e-mail.">
                               <div class="help-block with-errors"></div>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="form_need">Please specify your need *</label>
-                              <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                  <option value=""></option>
-                                  <option value="Request quotation">Request quotation</option>
-                                  <option value="Request order status">Request order status</option>
-                                  <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                  <option value="Other">Other</option>
-                              </select>
-                              <div class="help-block with-errors"></div>
-                          </div>
-                      </div>
+                      
                   </div>
                   <div class="row">
                       <div class="col-md-12">
                           <div class="form-group">
-                              <label for="form_message">Message *</label>
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                              <label for="form_message">Wiadomość *</label>
+                              <textarea id="form_message" name="message" class="form-control" placeholder="Twoja wiadomość *" rows="4" required="required" data-error="Wpisz wiadomość."></textarea>
                               <div class="help-block with-errors"></div>
                           </div>
                       </div>
                       <div class="col-md-12">
-                          <input type="submit" class="btn btn-xl btn-secondary btn-send" value="Send message">
+                          <input type="submit" class="btn btn-xl btn-primary btn-send" value="Send message">
                       </div>
                   </div>
               </div>
@@ -237,13 +218,16 @@
         </script>. All Rights Reserved.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Privacy</a>
+            <a class="nav-link js-scroll-trigger" href="#products">Produkty</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Terms</a>
+            <a class="nav-link js-scroll-trigger" href="#case-studies">Zadowoleni klienci</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">FAQ</a>
+            <a class="nav-link js-scroll-trigger" href="#custom">Niestandardowe</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Kontact</a>
           </li>
         </ul>
       </div>

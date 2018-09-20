@@ -14,13 +14,13 @@ $subject = 'New message from contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Wiadomość wysłana. Skontaktujemy się z Tobą wkrótce. ';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Nastąpił błąd przy wysyłaniu wiaomości. Napisz do nas bezpośrednio na sushi@fastpack.dk';
 
 /*
  *  LET'S DO THE SENDING

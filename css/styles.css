@@ -69,6 +69,7 @@ section h2 {
   font-weight: 200;
   letter-spacing: 1px;
   background: white;
+  padding: 4px 10px;
   border-bottom: 2px solid #feff02;
 }
 
@@ -82,6 +83,10 @@ section h2 {
   color: #00adef;
 }
 
+#mainNav .navbar-brand .img-fluid {
+  max-width: 90px;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   padding: 8px 10px;
@@ -93,10 +98,8 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 #mainNav .navbar-nav > li > a.active {
