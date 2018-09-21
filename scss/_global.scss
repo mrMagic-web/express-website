@@ -9,7 +9,10 @@ body {
 
 body {
     @include body-font;
-    
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url('./../img/intro-bg.jpg');
 }
 
 a {
@@ -49,9 +52,12 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
+header {
+    background-color: white;
+}
 section {
     padding: 100px 0;
+    background-color: white;
 }
 h1, h2 {
     font-size: 40px;
