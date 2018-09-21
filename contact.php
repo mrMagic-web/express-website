@@ -1,13 +1,10 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <sushi@fastpack.dk>';
+$from = 'maciejdrahusz@gmail.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <maciejdrahusz@gmail.com>';
+$sendTo = 'maciejdrahusz@gmail.com';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -31,7 +28,6 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 try
 {
-
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
     $emailText = "You have a new message from your contact form\n=============================\n";

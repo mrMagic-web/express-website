@@ -9,18 +9,16 @@ footer {
         margin: 0;
     }
     ul {
-        margin-bottom: 0;
-        li {
+        margin-bottom: 0;    
+    }
+    a {
+        font-size: 12px;
+        color: fade-out(white, .7);
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            text-decoration: none;
         }
     }
-                    a {
-                        font-size: 12px;
-                        color: fade-out(white, .7);
-                        &:hover,
-                        &:focus,
-                        &:active,
-                        &.active {
-                            text-decoration: none;
-                        }
-                    }
 }

@@ -1,11 +1,11 @@
 // Styling for the navbar
 #mainNav {
-    border-color: fade-out($gray-darker, .95);
     @include transition-all;
     @include heading-font;
-    background: white;
-    padding: 4px 10px;
-    border-bottom: 2px solid $theme-primary;
+    background: $gray-light;
+    padding: 0 10px 4px;
+    flex-direction: column;
+    
     .navbar-brand {
         @include heading-font;
         &:hover,
@@ -13,13 +13,16 @@
             color: $theme-secondary;
         }
         .img-fluid {
-            max-width: 90px;
+            max-width: 100px;
         }
     }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
-        color: $gray-darker;
+        color: black;
+        i {
+            font-size: 22px;
+        }
     }
     .navbar-nav {
         padding: 5px;
@@ -27,19 +30,42 @@
             > a {
                 font-weight: 300;
                 font-size: 15px;
+                color: black;
                 &.active {
-                    color: $theme-secondary;
-                    background-color: transparent;
+                    text-decoration: underline;
+                    
                     &:hover {
-                        background-color: transparent;
+                        text-decoration: underline;
                     }
                 }
             }
             > a,
             > a:focus {
-                color: $gray-darker;
                 &:hover {
-                    color: $theme-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }   
+    #contact-strip {
+        font-size: 14px;
+        background-color: $gray-lighterer;
+        width: 100%;
+        display: flex;
+        align-items: center;    
+        top: 0;
+        left: 0;
+        span {
+            display: flex;
+            margin: 2px 10px;
+            align-items: center;
+            a {
+                color: black;
+            }
+            i {
+                margin: 0 4px;
+                &:hover {
+                    text-decoration: none;  
                 }
             }
         }

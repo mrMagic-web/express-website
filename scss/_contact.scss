@@ -2,8 +2,24 @@
 section.contact {
     background-color: $gray-light;
     text-align: center;
+    color: black;
+    label {
+        text-align: left;
+        display: block;
+    }
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
+    }
+        .disabled {
+            background-color: $theme-secondary;
+            &:hover {
+                background-color: white;
+            }
+        }
+    #contact-form {
+        input, textarea {
+            border-radius: 0;
+        }
     }
 }

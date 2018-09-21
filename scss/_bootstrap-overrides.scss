@@ -1,10 +1,4 @@
 // Bootstrap overrides for this template
-.bg-primary {
-    background: $theme-primary;
-    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
-    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
-}
-
 .text-primary {
     color: $theme-primary;
 }
@@ -13,36 +7,31 @@
     padding-right: 0;
     padding-left: 0;
 }
-
-.btn-outline {
+.btn {
+    letter-spacing: 2px;
+    font-size: 14px;
+    border: 2px solid $theme-secondary !important;
+}
+.btn-secondary {
+    background-color: $theme-secondary;
     color: white;
-    border: 1px solid;
-    border-color: white;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-        color: white;
-        border-color: $theme-primary;
-        background-color: $theme-primary;
+    &:hover {
+        color: $theme-secondary;
+        background: white;
     }
 }
 
-.btn {
-    border-radius: 300px;
-    @include alt-font;
-}
+
 .btn-primary {
-    background-color: $theme-primary;
-    border-color: $theme-primary;
+    border-color: $theme-secondary;
     color: $theme-secondary;
+    background-color: white;
     &:hover {
-        color: $theme-primary;
+        color: white;
         background-color: $theme-secondary;
     }
 }
 .btn-xl {
-    font-size: 12px;
     padding: 13px 30px;
     margin: 4px;
 }

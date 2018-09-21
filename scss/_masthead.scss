@@ -2,8 +2,8 @@
 header.masthead {
     position: relative;
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 80px;
 
     .device-container {
         img {
@@ -12,32 +12,27 @@ header.masthead {
             display: block;
         }
     }
-    h3 {
-        color: $theme-secondary; 
-        font-size: 1.4rem;
-    }
 
     .header-content {
         max-width: 500px;
         margin-bottom: 40px;
 
         text-align: center;
-        h1 {
-            font-size: 1.6rem;
-        }
     }
 
     @media (min-width: 992px) {
-        height: 100vh;
         min-height: 500px;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 180px;
+        padding-bottom: 120px;
+    
         .header-content {
             margin-bottom: 0;
-
             text-align: left;
-            h1 {
-                font-size: 2.6rem;
+        
+        }
+        .device-container {
+            img {
+                max-width: 600px;
             }
         }
     }

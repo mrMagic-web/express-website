@@ -28,12 +28,6 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome 5
-  gulp.src([
-      './node_modules/@fortawesome/**/*'
-    ])
-    .pipe(gulp.dest('./vendor'))
-
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
