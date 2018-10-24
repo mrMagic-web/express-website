@@ -1,17 +1,20 @@
 // Styling for the download section
 section.products {
-    padding: 100px 0 80px;
-    background-color: $gray-lighter;
+  padding: 100px 0 80px;
+  background-color: $gray-lighter;
 
-    .product {
-        display: flex;
-        flex-direction: column;
-        .description {       
-            padding: 10px 10px 5px;
-            color: $theme-dark;
-        }
+  .product {
+    display: flex;
+    flex-direction: column;
+    .description {
+      padding: 10px 10px 5px;
+      color: $theme-dark;
     }
-    hr {
-        border-color: white;
-    }
+  }
+  hr {
+    border-color: white;
+  }
+  p {
+    font-size: 14px;
+  }
 }

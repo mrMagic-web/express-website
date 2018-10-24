@@ -1,73 +1,112 @@
 // Styling for the navbar
 #mainNav {
-    @include transition-all;
-    @include heading-font;
-    background: $gray-light;
-    padding: 0 10px 4px;
-    flex-direction: column;
-    
-    .navbar-brand {
-        @include heading-font;
-        &:hover,
-        &:focus {
-            color: $theme-secondary;
-        }
-        .img-fluid {
-            max-width: 100px;
-        }
-    }
-    .navbar-toggler {
-        font-size: 12px;
-        padding: 8px 10px;
-        color: black;
-        i {
-            font-size: 22px;
-        }
-    }
+  @include transition-all;
+  @include heading-font;
+  background: $gray-light;
+  padding: 0 10px 4px;
+  flex-direction: column;
+  &.navbar-shrink {
     .navbar-nav {
-        padding: 5px;
-        > li {
-            > a {
-                font-weight: 300;
-                font-size: 15px;
-                color: black;
-                &.active {
-                    text-decoration: underline;
-                    
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-            > a,
-            > a:focus {
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }   
-    #contact-strip {
-        font-size: 14px;
-        background-color: $gray-lighterer;
-        width: 100%;
-        display: flex;
-        align-items: center;    
-        top: 0;
-        left: 0;
-        span {
-            display: flex;
-            margin: 2px 10px;
-            align-items: center;
-            a {
-                color: black;
-            }
-            i {
-                margin: 0 4px;
-                &:hover {
-                    text-decoration: none;  
-                }
-            }
-        }
+      @media (min-width: 992px) {
+        padding: 2px;
+      }
     }
+    .navbar-brand {
+      .img-fluid {
+        max-width: 60px;
+      }
+    }
+    #contact-strip {
+      font-size: 0px;
+      span {
+        margin: 0px 10px;
+      }
+    }
+  }
+  .navbar-brand {
+    @include heading-font;
+    &:hover,
+    &:focus {
+      color: $theme-secondary;
+    }
+    .img-fluid {
+      max-width: 90px;
+      transition: all 0.2s;
+      @media (max-width: 991px) {
+        max-width: 60px;
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: black;
+    i {
+      font-size: 22px;
+    }
+  }
+  .navbar-nav {
+    padding: 5px;
+    > li {
+      > a {
+        font-weight: 300;
+        font-size: 15px;
+        color: black;
+        &.active {
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      > a,
+      > a:focus {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  #contact-strip {
+    @media (max-width: 991px) {
+      display: none;
+    }
+    font-size: 12px;
+    background-color: $gray-lighterer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    span {
+      display: flex;
+      margin: 2px 10px;
+      align-items: center;
+      a {
+        color: black;
+      }
+      i {
+        margin: 0 4px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .navbar-text {
+    display: none;
+    border-top: 1px solid white;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    i {
+      margin-right: 8px;
+    }
+    @media (max-width: 991px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

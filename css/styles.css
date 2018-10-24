@@ -9,7 +9,8 @@ body {
   width: 100%;
   height: 100%;
   min-width: 320px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,8 +31,9 @@ a:hover, a:focus {
   color: #cdce00;
 }
 
-p, button {
-  font-family: 'Open Sans', sans-serif;
+p,
+button {
+  font-family: "Open Sans", sans-serif;
 }
 
 hr {
@@ -51,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
 }
 
@@ -70,12 +72,14 @@ section {
   background-color: white;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 40px;
 }
 
 @media (min-width: 768px) {
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 56px;
   }
 }
@@ -94,6 +98,24 @@ h1, h2 {
   flex-direction: column;
 }
 
+@media (min-width: 992px) {
+  #mainNav.navbar-shrink .navbar-nav {
+    padding: 2px;
+  }
+}
+
+#mainNav.navbar-shrink .navbar-brand .img-fluid {
+  max-width: 60px;
+}
+
+#mainNav.navbar-shrink #contact-strip {
+  font-size: 0px;
+}
+
+#mainNav.navbar-shrink #contact-strip span {
+  margin: 0px 10px;
+}
+
 #mainNav .navbar-brand {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -105,7 +127,15 @@ h1, h2 {
 }
 
 #mainNav .navbar-brand .img-fluid {
-  max-width: 100px;
+  max-width: 90px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media (max-width: 991px) {
+  #mainNav .navbar-brand .img-fluid {
+    max-width: 60px;
+  }
 }
 
 #mainNav .navbar-toggler {
@@ -142,7 +172,7 @@ h1, h2 {
 }
 
 #mainNav #contact-strip {
-  font-size: 14px;
+  font-size: 12px;
   background-color: #fafafa;
   width: 100%;
   display: -webkit-box;
@@ -153,6 +183,12 @@ h1, h2 {
   align-items: center;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 991px) {
+  #mainNav #contact-strip {
+    display: none;
+  }
 }
 
 #mainNav #contact-strip span {
@@ -175,6 +211,35 @@ h1, h2 {
 
 #mainNav #contact-strip span i:hover {
   text-decoration: none;
+}
+
+#mainNav .navbar-text {
+  display: none;
+  border-top: 1px solid white;
+}
+
+#mainNav .navbar-text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#mainNav .navbar-text i {
+  margin-right: 8px;
+}
+
+@media (max-width: 991px) {
+  #mainNav .navbar-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 header.masthead {
@@ -244,6 +309,10 @@ section.products .product .description {
 
 section.products hr {
   border-color: white;
+}
+
+section.products p {
+  font-size: 14px;
 }
 
 section.features .section-heading {
@@ -383,7 +452,7 @@ footer a:hover, footer a:focus, footer a:active, footer a.active {
   color: #feff02;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -418,4 +487,8 @@ footer a:hover, footer a:focus, footer a:active, footer a.active {
 .btn-xl {
   padding: 13px 30px;
   margin: 4px;
+}
+
+.fixed-top {
+  width: calc(100% - 16px);
 }
