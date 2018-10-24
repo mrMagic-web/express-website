@@ -10,7 +10,6 @@ body {
   height: 100%;
   min-width: 320px;
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +18,10 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-image: url("./../img/intro-bg.jpg");
+}
+
+section {
+  overflow-x: hidden;
 }
 
 a {
@@ -487,8 +490,4 @@ footer a:hover, footer a:focus, footer a:active, footer a.active {
 .btn-xl {
   padding: 13px 30px;
   margin: 4px;
-}
-
-.fixed-top {
-  width: calc(100% - 16px);
 }
