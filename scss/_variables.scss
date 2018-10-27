@@ -2,15 +2,27 @@
 
 // Gray and Brand Colors for use across theme
 
-$theme-primary:    #feff02;
-$theme-secondary:  #00adef;
-$theme-tertiary:   #ec048e;
-$theme-dark:       #343a40;
+$theme-primary: #feff02;
+$theme-secondary: #00adef;
+$theme-tertiary: #ec048e;
+$theme-dark: #343a40;
 
-$gray-base:        #000;
-$gray-darker:      lighten($gray-base, 13.5%); // #222
-$gray-dark:        lighten($gray-base, 20%);   // #333
-$gray:             lighten($gray-base, 33.5%); // #555
-$gray-light:       #f1f1f1;
-$gray-lighter:     lighten($gray-base, 96%);
-$gray-lighterer:     lighten($gray-base, 98%);
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: lighten($gray-base, 20%); // #333
+$gray: lighten($gray-base, 33.5%); // #555
+$gray-light: #f1f1f1;
+$gray-lighter: lighten($gray-base, 96%);
+$gray-lighterer: lighten($gray-base, 98%);
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.ttf") format("truetype"),
+    url("../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
