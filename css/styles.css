@@ -296,12 +296,28 @@ header.masthead .header-content {
 #product-main {
   background: none;
   color: white;
+  padding: 0 0 40px 0;
 }
 
 #product-main .image {
   display: block;
   margin: auto;
-  max-width: 600px;
+  max-width: 700px;
+}
+
+#product-main .description {
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+
+#product-main h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+#product-main p {
+  font-size: 1.4rem;
 }
 
 section.products {
@@ -322,6 +338,10 @@ section.products .product {
 section.products .product .description {
   padding: 10px 10px 5px;
   color: #343a40;
+}
+
+section.products .product .image {
+  background-color: #fbfbfb;
 }
 
 section.products hr {
