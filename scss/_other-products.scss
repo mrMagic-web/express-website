@@ -1,12 +1,38 @@
 #phone
 {
-    transition: all 0.5s ease-out;
+    transition: color .0.5s;
 }
 #phone:hover
 {
-    transform: scale(1.5);
+    color:white;
 }
 .or
 {
     padding-top: 20px;
+}
+.table-size
+{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-collapse: collapse;
+}
+.table-sizer
+{
+    display:flex;
+    justify-content: center;
+    border: 2px solid #00adef;
+    border-radius: 10px;
+    transition: all 1s;
+    padding: 8px;
+    justify-content: center;
+    width: 100px;
+    flex-direction: column;
+}
+
+.row-row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
