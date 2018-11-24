@@ -525,3 +525,17 @@ footer a:hover, footer a:focus, footer a:active, footer a.active {
   padding: 13px 30px;
   margin: 4px;
 }
+
+#phone {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#phone:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.or {
+  padding-top: 20px;
+}
