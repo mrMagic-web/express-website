@@ -1,39 +1,45 @@
-#phone
-{
-    transition: color .0.5s;
+.phone {
+  transition: color 0.5s;
 }
-#phone:hover
-{
-    color:white;
+.phone:hover {
+  color: white;
 }
-.or
-{
-    padding-top: 20px;
+.or {
+  padding-top: 20px;
 }
-.row-row
-{
+.row-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.table-size {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  td {
+    padding: 2px 5px;
+  }
+}
+.header {
+  color: #00adef;
+}
+table {
+  padding: 10px;
+}
+.productsss {
+  display: block;
+  max-width: 200px;
+  margin: 10px auto;
+}
+.product-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .product-icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-.table-size
-{
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-}
-.header
-{
-    color: #00adef;
-}
-table
-{
-    padding: 10px;
-}
-
-.podswietlenie:hover
-{
-    background-color: #00adef;
-    color: white;
-
+    justify-content: space-around;
+    width: 100px;
+    margin: 1rem auto;
+  }
 }
