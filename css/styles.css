@@ -70,8 +70,8 @@ h6 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   margin-bottom: 20px;
   font-family: "OpenSans-Light", "Open Sans", sans-serif;
   font-weight: 300;
@@ -89,6 +89,20 @@ section {
 h1,
 h2 {
   font-size: 28px;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 40px 15px;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 100px 0 80px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -124,7 +138,7 @@ h2 {
 }
 
 #mainNav.navbar-shrink #contact-strip {
-  font-size: 0px;
+  font-size: 12px;
 }
 
 #mainNav.navbar-shrink #contact-strip span {
@@ -264,6 +278,7 @@ header.masthead {
   width: 100%;
   padding-top: 120px;
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 
 header.masthead .device-container img {
@@ -309,23 +324,20 @@ header.masthead .header-content {
   max-width: 700px;
   display: block;
   margin: auto;
+  text-align: left;
 }
 
 #product-main h2 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 #product-main p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
-section.products {
-  padding: 100px 0 80px;
-  background-color: whitesmoke;
-}
-
-section.products .product {
+#products .product {
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,20 +347,20 @@ section.products .product {
   flex-direction: column;
 }
 
-section.products .product .description {
+#products .product .description {
   padding: 10px 10px 5px;
   color: #343a40;
 }
 
-section.products .product .image {
+#products .product .image {
   background-color: #fbfbfb;
 }
 
-section.products hr {
+#products hr {
   border-color: white;
 }
 
-section.products p {
+#products p {
   font-size: 14px;
 }
 
@@ -394,6 +406,87 @@ section.features .feature-item i {
   background: linear-gradient(to left, #00adef, #ec048e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.phone {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.phone:hover {
+  color: white;
+}
+
+.or {
+  padding-top: 20px;
+}
+
+.row-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.table-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.table-size td {
+  padding: 2px 5px;
+}
+
+.header {
+  color: #00adef;
+}
+
+table {
+  padding: 10px;
+}
+
+.productsss {
+  display: block;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.product-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.product-contact .product-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100px;
+  margin: 1rem auto;
 }
 
 section.custom {
