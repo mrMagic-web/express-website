@@ -70,8 +70,8 @@ h6 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   margin-bottom: 20px;
   font-family: "OpenSans-Light", "Open Sans", sans-serif;
   font-weight: 300;
@@ -93,6 +93,16 @@ h2 {
 
 h4 {
   font-size: 1.2rem;
+}
+
+section {
+  padding: 40px 15px;
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 100px 0 80px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -268,6 +278,7 @@ header.masthead {
   width: 100%;
   padding-top: 120px;
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 
 header.masthead .device-container img {
@@ -325,12 +336,8 @@ header.masthead .header-content {
   font-size: 1.2rem;
 }
 
-section.products {
-  padding: 100px 0 80px;
-  background-color: whitesmoke;
-}
-
-section.products .product {
+#products .product {
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,20 +347,20 @@ section.products .product {
   flex-direction: column;
 }
 
-section.products .product .description {
+#products .product .description {
   padding: 10px 10px 5px;
   color: #343a40;
 }
 
-section.products .product .image {
+#products .product .image {
   background-color: #fbfbfb;
 }
 
-section.products hr {
+#products hr {
   border-color: white;
 }
 
-section.products p {
+#products p {
   font-size: 14px;
 }
 
