@@ -232,10 +232,6 @@ section {
   align-items: center;
 }
 
-#mainNav #contact-strip span a {
-  color: black;
-}
-
 #mainNav #contact-strip span i {
   margin: 0 4px;
 }
@@ -271,6 +267,10 @@ section {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+}
+
+#contact-strip a {
+  color: darkslategray;
 }
 
 header.masthead {
