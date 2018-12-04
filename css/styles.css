@@ -283,6 +283,7 @@ header.masthead {
 
 header.masthead .device-container img {
   max-width: 450px;
+  width: 100%;
   margin: auto;
   display: block;
 }
@@ -545,8 +546,14 @@ section.contact .disabled:hover {
   background-color: white;
 }
 
-section.contact #contact-form input, section.contact #contact-form textarea {
+section.contact #contact-form input,
+section.contact #contact-form textarea {
   border-radius: 0;
+}
+
+section.contact .contact-links a {
+  color: #00adef;
+  padding: 10px;
 }
 
 footer {
