@@ -45,4 +45,9 @@
     $('[data-toggle="tooltip"]').tooltip();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    $('.product-overlay').find('button').on('click', function() {
+        $(this).parent().parent().addClass('expanded');
+    })
+
 })(jQuery); // End of use strict

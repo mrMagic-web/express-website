@@ -338,7 +338,7 @@ header.masthead .header-content {
 }
 
 #products .product {
-  margin: 30px 0;
+  margin: 30px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,11 +346,87 @@ header.masthead .header-content {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  position: relative;
+  border: 1px solid #f1f1f1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+#products .product .image {
+  max-width: 250px;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 #products .product .description {
   padding: 10px 10px 5px;
   color: #343a40;
+  display: none;
+}
+
+#products .product .product-title {
+  padding: 5px 10px;
+}
+
+#products .product .product-overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#products .product .product-overlay:after {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity ease-in .2s;
+  transition: opacity ease-in .2s;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #00adef;
+}
+
+#products .product .product-overlay button {
+  -webkit-transition: opacity ease-in .2s;
+  transition: opacity ease-in .2s;
+  opacity: 0;
+  z-index: 1;
+}
+
+#products .product:hover .product-overlay:after {
+  opacity: .6;
+}
+
+#products .product:hover button {
+  opacity: 1;
+}
+
+#products .product.expanded {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+#products .product.expanded .product-overlay {
+  display: none;
+}
+
+#products .product.expanded .description {
+  display: block;
 }
 
 #products hr {
