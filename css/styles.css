@@ -574,3 +574,21 @@ table {
   background-color: #00adef;
   color: white;
 }
+
+.col-md {
+  padding-top: 50px;
+}
+
+.mainscroll {
+  color: black;
+  text-decoration: none;
+}
+
+.mainscroll:hover {
+  color: black;
+}
+
+.mainscroll:visited {
+  color: black;
+  text-decoration: none;
+}
