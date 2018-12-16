@@ -10,6 +10,8 @@
     <title>Opakowania do sushi dla Twojego biznesu</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/slick/slick.css" rel="stylesheet" />
+    <link href="vendor/slick/slick-theme.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css" />
@@ -89,6 +91,19 @@
                     </div>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md">
+                   <a class="js-scroll-trigger mainscroll" href="#product-main"> Pudełka na sushi </a>
+                  </div>
+                  <div class="col-md">
+                    <a class="js-scroll-trigger mainscroll" href="#products">Produkty z logo</a>
+                  </div>
+                  <div class="col-md">
+                    <a class="js-scroll-trigger mainscroll" href="#standard">Opakowania standardowe</a>
+                  </div>
+                </div>
+              </div>
         </div>
     </header>
     <section class="product-main text-center" id="product-main">
@@ -102,6 +117,8 @@
                     Pudełka na sushi czyli tzw. "Sushi Box" produkujemy z indywidualnym nadrukiem oraz w dowolnych rozmiarch.
                 </p>
             </div>
+            <a href="#contact" class="btn btn-secondary border-0 rounded-0 btn-xl js-scroll-trigger">Zamów już teraz</a>
+            <a href="#gallery" class="btn btn-secondary border-0 rounded-0 btn-xl js-scroll-trigger">Zobacz przykładowe realizacje</a>
         </div>
     </section>
     <section class="products" id="products">
@@ -386,6 +403,20 @@
         </div>
     </section>
 
+    <section id="gallery" class="gallery">
+        <h2 class="text-center">Przykładowe reazlizacje</h2>
+        <div class="carousel">
+        <div class="responsive" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div><img src="img/1.jpg" width="300px"></div>
+          <div><img src="img/2.jpg" width="300px"></div>
+          <div><img src="img/3.jpg" width="300px"></div>
+          <div><img src="img/4.jpg" width="300px"></div>
+          <div><img src="img/5.jpg" width="300px"></div>
+          <div><img src="img/6.jpg" width="300px"></div>
+        </div>
+        </div>
+      </section>
+      
     <section class="contact" id="contact">
         <div class="container">
             <h2>Skontaktuj się z nami!</h2>
@@ -473,10 +504,16 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="vendor/slick/slick.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+      integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+      crossorigin="anonymous"
+    ></script>
     <script src="contact.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
+
 </body>
 
 </html>
