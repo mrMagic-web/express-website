@@ -351,6 +351,10 @@ header.masthead .header-content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-transition: -webkit-flex-basis .2s ease-in-out;
+  transition: -webkit-flex-basis .2s ease-in-out;
+  transition: flex-basis .2s ease-in-out;
+  transition: flex-basis .2s ease-in-out, -webkit-flex-basis .2s ease-in-out, -ms-flex-preferred-size .2s ease-in-out;
 }
 
 #products .product .image {
@@ -363,6 +367,29 @@ header.masthead .header-content {
   padding: 10px 10px 5px;
   color: #343a40;
   display: none;
+}
+
+#products .product .description .close-button {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#products .product .description .close-button svg {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  width: 18px;
+  height: 18px;
+}
+
+#products .product .description .close-button:hover svg {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 #products .product .product-title {
@@ -419,6 +446,12 @@ header.masthead .header-content {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
 }
 
 #products .product.expanded .product-overlay {
@@ -426,6 +459,10 @@ header.masthead .header-content {
 }
 
 #products .product.expanded .description {
+  display: block;
+}
+
+#products .product.expanded .description .close-button {
   display: block;
 }
 
@@ -585,8 +622,8 @@ table {
 }
 
 .responsive img {
-  width: 98%;
-  margin: 0 1%;
+  width: calc(100% - 6px);
+  margin: 0 3px;
 }
 
 .gallery {

@@ -49,6 +49,9 @@
     $('.product-overlay').find('button').on('click', function() {
         $(this).parent().parent().addClass('expanded');
     })
+    $('.product .description').find('.close-button').on('click', function() {
+        $(this).parent().parent().removeClass('expanded');
+    })
 
     $('.responsive').slick({
         dots: false,
@@ -56,6 +59,8 @@
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
         responsive: [{
                 breakpoint: 1024,
                 settings: {

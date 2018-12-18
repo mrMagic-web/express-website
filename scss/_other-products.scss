@@ -75,8 +75,8 @@ table {
 .responsive {
     padding: 10px 20px;
     img {
-        width: 98%;
-        margin: 0 1%;
+        width: calc(100% - 6px);
+        margin: 0 3px;
     }
 }
 
