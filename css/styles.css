@@ -576,8 +576,17 @@ table {
   text-decoration: none;
 }
 
+.gallery h2 {
+  color: white;
+}
+
 .responsive {
-  padding: 50px;
+  padding: 10px 20px;
+}
+
+.responsive img {
+  width: 98%;
+  margin: 0 1%;
 }
 
 .gallery {

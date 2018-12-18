@@ -1,76 +1,94 @@
 .phone {
-  transition: color 0.5s;
+    transition: color 0.5s;
 }
+
 .phone:hover {
-  color: white;
+    color: white;
 }
+
 .or {
-  padding-top: 20px;
+    padding-top: 20px;
 }
+
 .row-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.table-size {
-  display: flex;
-  justify-content: center;
-  font-size: 12px;
-  td {
-    padding: 2px 5px;
-  }
-}
-.header {
-  color: #00adef;
-}
-table {
-  padding: 10px;
-}
-.productsss {
-  display: block;
-  max-width: 200px;
-  margin: 10px auto;
-}
-.product-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .product-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100px;
-    margin: 1rem auto;
-  }
+    justify-content: center;
 }
-.mainscroll
-{
+
+.table-size {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    td {
+        padding: 2px 5px;
+    }
+}
+
+.header {
+    color: #00adef;
+}
+
+table {
+    padding: 10px;
+}
+
+.productsss {
+    display: block;
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.product-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .product-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100px;
+        margin: 1rem auto;
+    }
+}
+
+.mainscroll {
     color: black;
- text-decoration: none;
+    text-decoration: none;
 }
-.mainscroll:hover
-{
+
+.mainscroll:hover {
     color: black;
 }
-.mainscroll:visited
-{
+
+.mainscroll:visited {
     color: black;
- text-decoration: none;
+    text-decoration: none;
 }
-.responsive
-{
-  padding: 50px;
+
+.gallery {
+    h2 {
+        color: white;
+    }
 }
-.gallery
-{
-  background-color: #00adef;
+
+.responsive {
+    padding: 10px 20px;
+    img {
+        width: 98%;
+        margin: 0 1%;
+    }
 }
-.carousel
-{
-  padding: 10px;
+
+.gallery {
+    background-color: #00adef;
 }
+
+.carousel {
+    padding: 10px;
+}
+
 .slick-prev,
-.slick-next
-{
-  margin: 20px;
+.slick-next {
+    margin: 20px;
 }
