@@ -47,6 +47,7 @@
     $(window).scroll(navbarCollapse);
 
     $('.product-overlay').find('button').on('click', function() {
+        $('.product').removeClass('expanded')
         $(this).parent().parent().addClass('expanded');
     })
     $('.product .description').find('.close-button').on('click', function() {
