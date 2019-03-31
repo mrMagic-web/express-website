@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Sushi v1.0.0 ()
- * Copyright 2013-2018 Maciek
+ * Copyright 2013-2019 Maciek
  * Licensed under MIT (https://github.com/BlackrockDigital/Sushi/blob/master/LICENSE)
  */
 
