@@ -12,16 +12,42 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("../fonts/SourceSansPro-Regular.eot");
+  src: url("../fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("../fonts/SourceSansPro-Bold.eot");
+  src: url("../fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("../fonts/SourceSansPro-Black.eot");
+  src: url("../fonts/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Black.woff2") format("woff2"), url("../fonts/SourceSansPro-Black.woff") format("woff"), url("../fonts/SourceSansPro-Black.ttf") format("truetype"), url("../fonts/SourceSansPro-Black.svg#SourceSansPro-Black") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
   min-width: 320px;
-  font-family: "OpenSans-Light", "Open Sans", sans-serif;
+  font-family: "SourceSansPro-Regular", "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "SourceSansPro-Regular", "Open Sans", sans-serif;
+  font-weight: 300;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -34,7 +60,8 @@ section {
 
 a {
   color: #feff02;
-  font-family: "OpenSans-Light", "Open Sans", sans-serif;
+  font-family: "SourceSansPro-Regular", "Open Sans", sans-serif;
+  font-weight: 300;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
@@ -45,7 +72,7 @@ a:hover, a:focus {
 
 p,
 button {
-  font-family: "OpenSans-Light", "Open Sans", sans-serif;
+  font-family: "SourceSansPro-Bold", "Open Sans", sans-serif;
 }
 
 hr {
@@ -65,7 +92,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "OpenSans-Light", "Open Sans", sans-serif;
+  font-family: "SourceSansPro-Bold", "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -73,7 +100,8 @@ p {
   font-size: 0.875rem;
   line-height: 1.5rem;
   margin-bottom: 20px;
-  font-family: "OpenSans-Light", "Open Sans", sans-serif;
+  font-family: "SourceSansPro-Regular", "Open Sans", sans-serif;
+  font-weight: 300;
   font-weight: 300;
 }
 
@@ -116,15 +144,19 @@ section {
 #mainNav {
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #f1f1f1;
-  padding: 0 10px 4px;
+  padding: 0 10px 8px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 90px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 @media (min-width: 992px) {
@@ -134,7 +166,8 @@ section {
 }
 
 #mainNav.navbar-shrink .navbar-brand .img-fluid {
-  max-width: 60px;
+  max-width: 350px;
+  width: 100%;
 }
 
 #mainNav.navbar-shrink #contact-strip {
@@ -145,18 +178,11 @@ section {
   margin: 0px 10px;
 }
 
-#mainNav .navbar-brand {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
   color: #00adef;
 }
 
 #mainNav .navbar-brand .img-fluid {
-  max-width: 90px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -182,11 +208,12 @@ section {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 13px;
+  font-family: "SourceSansPro-Bold", "Open Sans", sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
-  color: black;
-  font-weight: 300;
+  color: #383838;
   letter-spacing: 0;
+  padding-bottom: 0;
 }
 
 #mainNav .navbar-nav > li > a.active {
@@ -276,16 +303,10 @@ section {
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 80px;
   overflow-x: hidden;
-}
-
-header.masthead .device-container img {
-  max-width: 450px;
-  width: 100%;
-  margin: auto;
-  display: block;
+  background-image: url("../img/new/main_sushi_banner.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 header.masthead .header-content {
@@ -296,9 +317,8 @@ header.masthead .header-content {
 
 @media (min-width: 992px) {
   header.masthead {
-    min-height: 500px;
-    padding-top: 180px;
-    padding-bottom: 120px;
+    margin-top: 90px;
+    min-height: 460px;
   }
   header.masthead .header-content {
     margin-bottom: 0;
@@ -367,7 +387,7 @@ header.masthead .header-content {
 
 .product .description {
   padding: 10px 20px 5px;
-  color: #343a40;
+  color: #383838;
   display: none;
   text-align: left;
 }
@@ -777,4 +797,10 @@ footer a:hover, footer a:focus, footer a:active, footer a.active {
 .btn-xl {
   padding: 13px 30px;
   margin: 4px;
+}
+
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1200px;
+  }
 }

@@ -29,7 +29,7 @@
     }
     &:active,
     &.active,
-    .open > &.dropdown-toggle {
+    .open>&.dropdown-toggle {
         color: $color;
         border-color: darken($border, 12%);
         background-color: darken($background, 10%);
@@ -43,7 +43,7 @@
     }
     &:active,
     &.active,
-    .open > &.dropdown-toggle {
+    .open>&.dropdown-toggle {
         background-image: none;
     }
     &.disabled,
@@ -60,20 +60,4 @@
         color: $background;
         background-color: $color;
     }
-}
-
-@mixin heading-font {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-
-@mixin body-font {
-    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
-}
-
-@mixin alt-font {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }

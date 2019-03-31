@@ -1,10 +1,12 @@
 // Styling for the navbar
 #mainNav {
     @include transition-all;
-    @include heading-font;
+    display: flex;
     background: $gray-light;
-    padding: 0 10px 4px;
+    padding: 0 10px 8px;
     flex-direction: column;
+    height: 90px;
+    justify-content: flex-end;
     &.navbar-shrink {
         .navbar-nav {
             @media (min-width: 992px) {
@@ -13,7 +15,8 @@
         }
         .navbar-brand {
             .img-fluid {
-                max-width: 60px;
+                max-width: 350px;
+                width: 100%;
             }
         }
         #contact-strip {
@@ -24,13 +27,11 @@
         }
     }
     .navbar-brand {
-        @include heading-font;
         &:hover,
         &:focus {
             color: $theme-secondary;
         }
         .img-fluid {
-            max-width: 90px;
             transition: all 0.2s;
             @media (max-width: 991px) {
                 max-width: 60px;
@@ -49,11 +50,12 @@
         padding: 5px;
         >li {
             >a {
-                font-size: 13px;
+                @include main-bold;
+                font-size: 16px;
                 text-transform: uppercase;
-                color: black;
-                font-weight: 300;
+                color: $theme-dark;
                 letter-spacing: 0;
+                padding-bottom: 0;
                 &.active {
                     text-decoration: underline;
                     &:hover {

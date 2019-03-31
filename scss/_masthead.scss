@@ -2,26 +2,18 @@
 header.masthead {
     position: relative;
     width: 100%;
-    padding-top: 120px;
-    padding-bottom: 80px;
     overflow-x: hidden;
-    .device-container {
-        img {
-            max-width: 450px;
-            width: 100%;
-            margin: auto;
-            display: block;
-        }
-    }
+    background-image: url('../img/new/main_sushi_banner.jpg');
+    background-position: center center;
+    background-size: cover;
     .header-content {
         max-width: 500px;
         margin-bottom: 40px;
         text-align: center;
     }
     @media (min-width: 992px) {
-        min-height: 500px;
-        padding-top: 180px;
-        padding-bottom: 120px;
+        margin-top: 90px;
+        min-height: 460px;
         .header-content {
             margin-bottom: 0;
             text-align: left;

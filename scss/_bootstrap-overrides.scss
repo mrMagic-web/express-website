@@ -1,36 +1,45 @@
 // Bootstrap overrides for this template
 .text-primary {
-  color: $theme-primary;
+    color: $theme-primary;
 }
 
-.no-gutter > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
+.no-gutter>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
+
 .btn {
-  letter-spacing: 2px;
-  font-size: 14px;
-  border: 2px solid $theme-secondary !important;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border: 2px solid $theme-secondary !important;
 }
+
 .btn-secondary {
-  background-color: $theme-secondary;
-  color: white;
-  &:hover {
-    color: $theme-secondary;
-    background: white;
-  }
+    background-color: $theme-secondary;
+    color: white;
+    &:hover {
+        color: $theme-secondary;
+        background: white;
+    }
 }
 
 .btn-primary {
-  border-color: $theme-secondary;
-  color: $theme-secondary;
-  background-color: white;
-  &:hover {
-    color: white;
-    background-color: $theme-secondary;
-  }
+    border-color: $theme-secondary;
+    color: $theme-secondary;
+    background-color: white;
+    &:hover {
+        color: white;
+        background-color: $theme-secondary;
+    }
 }
+
 .btn-xl {
-  padding: 13px 30px;
-  margin: 4px;
+    padding: 13px 30px;
+    margin: 4px;
+}
+
+@media (min-width: 1260px) {
+    .container {
+        max-width: 1200px;
+    }
 }
