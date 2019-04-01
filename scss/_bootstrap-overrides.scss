@@ -38,6 +38,10 @@
     margin: 4px;
 }
 
+.container {
+    position: relative;
+}
+
 @media (min-width: 1260px) {
     .container {
         max-width: 1200px;

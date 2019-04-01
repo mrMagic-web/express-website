@@ -4,12 +4,36 @@ header.masthead {
     width: 100%;
     overflow-x: hidden;
     background-image: url('../img/new/main_sushi_banner.jpg');
-    background-position: center center;
+    background-position: calc(50% + 4rem) center;
     background-size: cover;
-    .header-content {
-        max-width: 500px;
-        margin-bottom: 40px;
+    .main-header {
+        font-size: 2.95rem;
+        color: white;
+        margin-top: 2rem;
+        display: block;
+    }
+    .masterhead-content {
+        width: 18rem;
+        right: 1rem;
+        margin-top: 2rem;
+        position: absolute;
         text-align: center;
+        p {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            display: block;
+            font-size: 1.2rem;
+            background-color: white;
+            color: black;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+            @include main-bold;
+            margin-top: 1rem;
+            padding: 0.25rem;
+        }
     }
     @media (min-width: 992px) {
         margin-top: 90px;
