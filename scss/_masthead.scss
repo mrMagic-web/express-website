@@ -6,6 +6,11 @@ header.masthead {
     background-image: url('../img/new/main_sushi_banner.jpg');
     background-position: calc(50% + 4rem) center;
     background-size: cover;
+    .navbar-brand {
+        img {
+            max-width: 310px;
+        }
+    }
     .main-header {
         font-size: 2.95rem;
         color: white;

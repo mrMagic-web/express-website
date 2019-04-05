@@ -49,14 +49,15 @@ h5,
 h6 {
     @include main-bold;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 p {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    font-size: 19px;
+    line-height: 22px;
     margin-bottom: 20px;
     @include main-regular;
-    font-weight: 300;
+    letter-spacing: -0.2px;
 }
 
 header {
@@ -68,13 +69,12 @@ section {
     background-color: white;
 }
 
-h1,
 h2 {
-    font-size: 28px;
+    font-size: 31px;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 19px;
 }
 
 section {
@@ -84,10 +84,6 @@ section {
     }
 }
 
-@media (min-width: 768px) {
-    h1,
-    h2 {
-        font-size: 36px;
-        text-transform: uppercase;
-    }
-}
+// @media (min-width: 768px) {
+
+// }

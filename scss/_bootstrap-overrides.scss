@@ -9,9 +9,13 @@
 }
 
 .btn {
-    letter-spacing: 2px;
-    font-size: 14px;
-    border: 2px solid $theme-secondary !important;
+    display: block;
+    max-width: 20rem;
+    margin: 1rem auto;
+    @include main-bold;
+    border-radius: 0.75rem;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .btn-secondary {
@@ -24,12 +28,13 @@
 }
 
 .btn-primary {
-    border-color: $theme-secondary;
-    color: $theme-secondary;
-    background-color: white;
+    border-color: $theme-red;
+    color: white;
+    background-color: $theme-red;
     &:hover {
-        color: white;
-        background-color: $theme-secondary;
+        color: $theme-red;
+        background-color: white;
+        border-color: $theme-red;
     }
 }
 
