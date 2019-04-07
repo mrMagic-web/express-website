@@ -1,0 +1,24 @@
+.case-studies {
+    .slick-slide {
+        padding: 1rem 2rem;
+        @media (min-width: 992px) {
+            margin: 0 2rem;
+        }
+    }
+    .slick-current {
+        background-color: $gray-light;
+    } 
+    .slick-prev, .slick-next {
+        &::before {
+            display: none;
+        }
+        width: 60px;
+        height: 60px;
+    }
+    .slick-prev {
+        left: calc(10vw - 20px);
+    }
+    .slick-next {
+        right: calc(10vw - 20px);
+    }
+} 

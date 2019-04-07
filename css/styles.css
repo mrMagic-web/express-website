@@ -94,12 +94,10 @@ h6 {
 }
 
 p {
-  font-size: 19px;
-  line-height: 22px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 23px;
   font-family: "SourceSansPro-Regular", "Open Sans", sans-serif;
   font-weight: 300;
-  letter-spacing: -0.2px;
 }
 
 header {
@@ -112,7 +110,7 @@ section {
 }
 
 h2 {
-  font-size: 31px;
+  font-size: 2.3rem;
 }
 
 h4 {
@@ -121,12 +119,6 @@ h4 {
 
 section {
   padding: 40px 15px;
-}
-
-@media (min-width: 992px) {
-  section {
-    padding-top: 100px 0 80px;
-  }
 }
 
 #mainNav {
@@ -292,7 +284,7 @@ header.masthead {
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  background-image: url("../img/new/main_sushi_banner.jpg");
+  background-image: url("../img/main_sushi_banner.jpg");
   background-position: calc(50% + 4rem) center;
   background-size: cover;
 }
@@ -380,45 +372,17 @@ header.masthead .masterhead-content a {
   margin-right: -8.334%;
 }
 
-#product-main .product-sections {
-  margin-top: 3rem;
-}
-
-#product-main .product-sections .columns {
+.products .columns {
   margin-top: 1.2rem;
 }
 
-.product {
-  margin: 30px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  border: 1px solid #f1f1f1;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-transition: -webkit-flex-basis .2s ease-in-out;
-  transition: -webkit-flex-basis .2s ease-in-out;
-  transition: flex-basis .2s ease-in-out;
-  transition: flex-basis .2s ease-in-out, -webkit-flex-basis .2s ease-in-out, -ms-flex-preferred-size .2s ease-in-out;
-  text-align: center;
-}
-
-.product .product-section {
-  text-align: center;
-}
-
-.product .product-section .image-prod {
+.products .image-prod {
   padding: 0 2rem;
+  margin-bottom: -1.8rem;
 }
 
-.product .product-section .image-prod img {
-  max-width: 400px;
+.products .text-prod {
+  text-align: center;
 }
 
 #products-nologo {
@@ -658,6 +622,37 @@ section.contact #contact-form textarea {
 section.contact .contact-links a {
   color: #00adef;
   padding: 10px;
+}
+
+.case-studies .slick-slide {
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 992px) {
+  .case-studies .slick-slide {
+    margin: 0 2rem;
+  }
+}
+
+.case-studies .slick-current {
+  background-color: #f1f1f1;
+}
+
+.case-studies .slick-prev, .case-studies .slick-next {
+  width: 60px;
+  height: 60px;
+}
+
+.case-studies .slick-prev::before, .case-studies .slick-next::before {
+  display: none;
+}
+
+.case-studies .slick-prev {
+  left: calc(10vw - 20px);
+}
+
+.case-studies .slick-next {
+  right: calc(10vw - 20px);
 }
 
 footer {

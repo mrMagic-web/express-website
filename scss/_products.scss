@@ -1,23 +1,46 @@
-// Styling for the download section
-.product {
-    margin: 30px 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border: 1px solid $gray-light;
-    flex: 1;
-    transition: flex-basis .2s ease-in-out;
-    text-align: center;
-    .product-section {
+#product-main {
+    background: #e7e7e7;
+    color: black;
+    padding: 40px 1rem;
+    .product-logo {
+        margin-bottom: 1rem;
+    }
+    .description {
         text-align: center;
-        .image-prod {
-            padding: 0 2rem;
-            img {
-                max-width: 400px;
-            }
+        p {
+            font-size: 1.25rem;
+        }
+        .btn {
+            margin: 1rem auto;
+        }
+        .product-buttons {
+            margin-top: 2rem;
         }
     }
+    .col-md-pull-2 {
+        padding-left: 5rem;
+        margin-left: -16.67%;
+        margin-right: -8.334%;
+    }    
 }
+
+.products {
+
+        .columns {
+            margin-top: 1.2rem;
+        }
+        .image-prod {
+            padding: 0 2rem;
+            margin-bottom: -1.8rem;
+        }
+        .text-prod {
+            text-align: center;
+
+        }
+    
+}
+
+
 #products-nologo {
     background: #e7e7e7;
 }
