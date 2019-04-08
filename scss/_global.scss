@@ -74,8 +74,22 @@ h2 {
 h4 {
     font-size: 19px;
 }
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        @include main-regular;
+    }
+}
 
 section {
     padding: 40px 15px;
-
+    
 }

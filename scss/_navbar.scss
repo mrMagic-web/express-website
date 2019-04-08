@@ -5,8 +5,10 @@
     background: $gray-light;
     padding: 0 10px 8px;
     flex-direction: column;
-    height: 90px;
     justify-content: flex-end;
+    @media (min-width: 992px) {
+        height: 90px;
+    }
     &.navbar-shrink {
         .navbar-nav {
             @media (min-width: 992px) {
@@ -15,7 +17,7 @@
         }
         .navbar-brand {
             .img-fluid {
-                max-width: 350px;
+                max-width: 270px;
                 width: 100%;
             }
         }
@@ -34,7 +36,7 @@
         .img-fluid {
             transition: all 0.2s;
             @media (max-width: 991px) {
-                max-width: 60px;
+                max-width: 180px;
             }
         }
     }
