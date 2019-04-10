@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Sushi v1.0.0 ()
+ * Start Bootstrap - Sushi v1.0.0 (https://github.com/mrMagic-web/sushi-site#readme)
  * Copyright 2013-2019 Maciek
- * Licensed under MIT (https://github.com/BlackrockDigital/Sushi/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/sushi/blob/master/LICENSE)
  */
 
 @font-face {
@@ -159,23 +159,9 @@ section {
   }
 }
 
-@media (min-width: 992px) {
-  #mainNav.navbar-shrink .navbar-nav {
-    padding: 2px;
-  }
-}
-
-#mainNav.navbar-shrink .navbar-brand .img-fluid {
-  max-width: 270px;
+#mainNav .navbar-logo {
+  max-width: 300px;
   width: 100%;
-}
-
-#mainNav.navbar-shrink #contact-strip {
-  font-size: 12px;
-}
-
-#mainNav.navbar-shrink #contact-strip span {
-  margin: 0px 10px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -230,7 +216,7 @@ section {
 }
 
 #mainNav #contact-strip {
-  font-size: 13px;
+  font-size: 14px;
   background-color: #fafafa;
   width: 100%;
   display: -webkit-box;
@@ -239,6 +225,7 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -399,9 +386,18 @@ header.masthead .masterhead-content a {
 }
 
 #product-main .col-md-pull-2 {
-  padding-left: 5rem;
-  margin-left: -16.67%;
-  margin-right: -8.334%;
+  padding: 1rem;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  #product-main .col-md-pull-2 {
+    padding-left: 5rem;
+    margin-left: -16.67%;
+    margin-right: -8.334%;
+  }
 }
 
 .products .columns {
@@ -651,9 +647,41 @@ section.contact #contact-form textarea {
   border-radius: 0;
 }
 
+section.contact .contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section.contact .contact-links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
 section.contact .contact-links a {
-  color: #00adef;
+  font-family: "SourceSansPro-Black", "Open Sans", sans-serif;
+  color: #a2a2a2;
   padding: 10px;
+  font-size: 1.15rem;
+}
+
+section.contact .contact-links i {
+  color: #a2a2a2;
+  font-size: 2.5rem;
+}
+
+section.contact .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .case-studies .slick-slide {
@@ -673,6 +701,7 @@ section.contact .contact-links a {
 .case-studies .slick-prev, .case-studies .slick-next {
   width: 60px;
   height: 60px;
+  z-index: 20;
 }
 
 .case-studies .slick-prev::before, .case-studies .slick-next::before {
@@ -692,7 +721,14 @@ section.contact .contact-links a {
     margin: 0 1rem;
   }
   .case-studies .slick-next, .case-studies .slick-prev {
-    display: none;
+    width: 30px;
+    height: 30px;
+  }
+  .case-studies .slick-prev {
+    left: -40px;
+  }
+  .case-studies .slick-next {
+    right: -40px;
   }
   .case-studies .slick-slide {
     padding: 0.5rem 1rem;

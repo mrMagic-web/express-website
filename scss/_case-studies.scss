@@ -14,6 +14,7 @@
         }
         width: 60px;
         height: 60px;
+        z-index: 20;
     }
     .slick-prev {
         left: calc(10vw - 20px);
@@ -23,7 +24,14 @@
     }
     @media (max-width: 767px) {
         .slick-next, .slick-prev {
-            display: none;
+            width: 30px;
+            height: 30px;
+        }
+        .slick-prev {
+            left: -40px;
+        }
+        .slick-next {
+            right: -40px;
         }
         .slick-slide {
             padding: 0.5rem 1rem;

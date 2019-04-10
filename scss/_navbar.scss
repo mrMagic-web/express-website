@@ -9,25 +9,11 @@
     @media (min-width: 992px) {
         height: 90px;
     }
-    &.navbar-shrink {
-        .navbar-nav {
-            @media (min-width: 992px) {
-                padding: 2px;
-            }
-        }
-        .navbar-brand {
-            .img-fluid {
-                max-width: 270px;
-                width: 100%;
-            }
-        }
-        #contact-strip {
-            font-size: 12px;
-            span {
-                margin: 0px 10px;
-            }
-        }
+    .navbar-logo {
+        max-width: 300px;
+        width: 100%;
     }
+
     .navbar-brand {
         &:hover,
         &:focus {
@@ -77,11 +63,12 @@
         @media (max-width: 991px) {
             display: none;
         }
-        font-size: 13px;
+        font-size: 14px;
         background-color: $gray-lighterer;
         width: 100%;
         display: flex;
         align-items: center;
+        position: absolute;
         top: 0;
         left: 0;
         span {
