@@ -386,7 +386,7 @@ header.masthead .masterhead-content a {
 }
 
 #product-main .col-md-pull-2 {
-  padding: 1rem;
+  padding: 0;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -394,6 +394,7 @@ header.masthead .masterhead-content a {
 
 @media (min-width: 1024px) {
   #product-main .col-md-pull-2 {
+    padding: 1rem;
     padding-left: 5rem;
     margin-left: -16.67%;
     margin-right: -8.334%;
