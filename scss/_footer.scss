@@ -4,7 +4,7 @@ footer {
     text-align: center;
     color: fade-out(white, .7);
     background-color: $gray-darker;
-    p {
+    span {
         font-size: 12px;
         margin: 0;
     }
@@ -19,6 +19,42 @@ footer {
         &:active,
         &.active {
             text-decoration: none;
+        }
+    }
+    .logo-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fp-logo {
+        max-width: 180px;
+    }
+     .fastpack-copy {
+        color: white; 
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    p{
+        font-size: 1rem;
+    }
+    .social {
+        display: flex;
+        padding: 1.5rem 1rem;
+        color: white;
+        div {
+                        text-align: right;
+            .sm-logos {
+                svg {
+                    margin: 5px;
+                    fill: white;
+                    width: 34px;
+                    height: 34px;;
+                }
+            }
+
         }
     }
 }

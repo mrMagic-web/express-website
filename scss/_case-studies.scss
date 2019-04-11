@@ -43,5 +43,13 @@
         .responsive {
             padding: 5px;
         }
+        .gallery-slide {
+            .my-auto {
+                display: none;
+                &:first-of-type {
+                    display: block;
+                }
+            }
+        }
     }
 } 

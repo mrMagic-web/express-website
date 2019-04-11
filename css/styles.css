@@ -740,6 +740,12 @@ section.contact .form-check {
   .case-studies .responsive {
     padding: 5px;
   }
+  .case-studies .gallery-slide .my-auto {
+    display: none;
+  }
+  .case-studies .gallery-slide .my-auto:first-of-type {
+    display: block;
+  }
 }
 
 footer {
@@ -749,7 +755,7 @@ footer {
   background-color: #222222;
 }
 
-footer p {
+footer span {
   font-size: 12px;
   margin: 0;
 }
@@ -765,6 +771,60 @@ footer a {
 
 footer a:hover, footer a:focus, footer a:active, footer a.active {
   text-decoration: none;
+}
+
+footer .logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .fp-logo {
+  max-width: 180px;
+}
+
+footer .fastpack-copy {
+  color: white;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 1rem;
+  color: white;
+}
+
+footer .social div {
+  text-align: right;
+}
+
+footer .social div .sm-logos svg {
+  margin: 5px;
+  fill: white;
+  width: 34px;
+  height: 34px;
 }
 
 .text-primary {
