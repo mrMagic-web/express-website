@@ -26,6 +26,14 @@
     $(".navbar-collapse").collapse("hide");
   });
 
+
+  $('#contactCheckbox').on("click", function () {
+    if ($('#contactCheckbox').prop('checked')) {
+      $('#linkPhone').addClass('highlight-phone');
+      setTimeout(function () { $('#linkPhone').removeClass('highlight-phone') }, 1000)
+    }
+  })
+
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
     target: "#mainNav",

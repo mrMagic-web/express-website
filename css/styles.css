@@ -685,6 +685,15 @@ section.contact .form-check {
   display: flex;
 }
 
+section.contact #linkPhone {
+  -webkit-transition: color ease-in-out .2s;
+  transition: color ease-in-out .2s;
+}
+
+section.contact #linkPhone.highlight-phone a {
+  color: white;
+}
+
 .case-studies .slick-slide {
   padding: 1rem 2rem;
 }

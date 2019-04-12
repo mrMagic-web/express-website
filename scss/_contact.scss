@@ -45,4 +45,12 @@ section.contact {
     .form-check {
         display: flex;
     }
+    #linkPhone {
+        transition: color ease-in-out .2s;
+        &.highlight-phone {
+            a {
+                color: white;
+            }
+        }
+    }
 }
