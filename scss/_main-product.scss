@@ -2,17 +2,22 @@
     background: #e7e7e7;
     color: black;
     padding: 40px 1rem;
+
     .product-logo {
         margin-bottom: 1rem;
     }
+
     .description {
         text-align: center;
+
         p {
             font-size: 1.25rem;
         }
+
         .btn {
             margin: 1rem auto;
         }
+
         .product-buttons {
             margin-top: 2rem;
         }
@@ -20,8 +25,9 @@
 
     .product-sections {
         margin-top: 3rem;
+
         .columns {
             margin-top: 1.2rem;
         }
     }
-}    
+}
