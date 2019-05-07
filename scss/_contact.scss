@@ -1,69 +1,70 @@
 // Styling for the download section
 section.contact {
-    background-color: $gray-light;
-    text-align: center;
-    color: black;
+  background-color: $gray-light;
+  text-align: center;
+  color: black;
 
-    label {
-        text-align: left;
-        display: block;
+  label {
+    text-align: left;
+    display: block;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .disabled {
+    background-color: $theme-secondary;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  #contact-form {
+
+    input,
+    textarea {
+      border-radius: 0;
+    }
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin: 0 0.5rem;
     }
 
-    h2 {
-        margin-top: 0;
-        margin-bottom: 25px;
+    a {
+      @include main-black;
+      color: $gray-mid;
+      padding: 10px;
+      font-size: 1.15rem;
     }
 
-    .disabled {
-        background-color: $theme-secondary;
-
-        &:hover {
-            background-color: white;
-        }
+    i {
+      color: $gray-mid;
+      font-size: 2.5rem;
     }
+  }
 
-    #contact-form {
+  .form-check {
+    display: flex;
+  }
 
-        input,
-        textarea {
-            border-radius: 0;
-        }
+  #linkPhone {
+    transition: color ease-in-out .2s;
+
+    &.highlight-phone {
+      a {
+        color: white;
+      }
     }
-
-    .contact-links {
-        display: flex;
-        justify-content: center;
-
-        div {
-            display: flex;
-            align-items: center;
-            margin: 0 0.5rem;
-        }
-
-        a {
-            @include main-black;
-            color: $gray-mid;
-            padding: 10px;
-            font-size: 1.15rem;
-        }
-
-        i {
-            color: $gray-mid;
-            font-size: 2.5rem;
-        }
-    }
-
-    .form-check {
-        display: flex;
-    }
-
-    #linkPhone {
-        transition: color ease-in-out .2s;
-
-        &.highlight-phone {
-            a {
-                color: white;
-            }
-        }
-    }
+  }
 }

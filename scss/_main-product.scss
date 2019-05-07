@@ -1,33 +1,57 @@
 #product-main {
-    background: #e7e7e7;
-    color: black;
-    padding: 40px 1rem;
+  background: #e7e7e7;
+  color: black;
+  padding: 40px 1rem;
+  margin-top: -8px;
 
-    .product-logo {
-        margin-bottom: 1rem;
+  .product-logo {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    text-align: center;
+
+    p {
+      font-size: 1.25rem;
     }
 
-    .description {
-        text-align: center;
-
-        p {
-            font-size: 1.25rem;
-        }
-
-        .btn {
-            margin: 1rem auto;
-        }
-
-        .product-buttons {
-            margin-top: 2rem;
-        }
+    .btn {
+      margin: 1rem auto;
     }
 
-    .product-sections {
-        margin-top: 3rem;
-
-        .columns {
-            margin-top: 1.2rem;
-        }
+    .product-buttons {
+      margin-top: 2rem;
     }
+  }
+
+  .product-sections {
+    margin-top: 3rem;
+
+
+    .columns {
+      margin-top: 1.2rem;
+
+      .product-advantage {
+
+        .icon {
+          position: absolute;
+          left: -30px;
+          margin-top: 4px;
+          width: 35px;
+
+          img {
+            width: 35px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          padding-left: 50px;
+
+          .icon {
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
 }

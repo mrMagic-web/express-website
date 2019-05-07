@@ -11,8 +11,8 @@
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
         $("html, body").animate({
-          scrollTop: target.offset().top - 48
-        },
+            scrollTop: target.offset().top - 48
+          },
           1000,
           "easeInOutExpo"
         );
@@ -30,9 +30,18 @@
   $('#contactCheckbox').on("click", function () {
     if ($('#contactCheckbox').prop('checked')) {
       $('#linkPhone').addClass('highlight-phone');
-      setTimeout(function () { $('#linkPhone').removeClass('highlight-phone') }, 1000)
+      $("#form_phone").prop('required', 'required');
+      $("#form_email").prop('required', '');
+      $("#form_name").prop('required', '');
+      setTimeout(function () {
+        $('#linkPhone').removeClass('highlight-phone');
+      }, 1000);
+    } else {
+      $("#form_phone").prop('required', '');
+      $("#form_email").prop('required', 'required');
+      $("#form_name").prop('required', 'required');
     }
-  })
+  });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
@@ -45,12 +54,12 @@
 
 
   $('.product-overlay').find('button').on('click', function () {
-    $('.product').removeClass('expanded')
+    $('.product').removeClass('expanded');
     $(this).parent().parent().addClass('expanded');
-  })
+  });
   $('.product .description').find('.close-button').on('click', function () {
     $(this).parent().parent().removeClass('expanded');
-  })
+  });
 
   $('.responsive').slick({
     arrows: true,
@@ -61,17 +70,25 @@
     autoplay: false,
     centerMode: true,
     centerPadding: '10vw',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          centerPadding: '0px',
-        }
-      },
-    ]
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+        centerPadding: '0px',
+      }
+    }, ]
+  });
+  $('.slickMobile').slick({
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode: true,
+    centerPadding: '0',
   });
 
 })(jQuery); // End of use strict

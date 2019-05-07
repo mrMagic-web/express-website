@@ -290,7 +290,6 @@ section {
 header.masthead {
   position: relative;
   width: 100%;
-  overflow-x: hidden;
   background-image: url("../img/main_sushi_banner.jpg");
   background-position: calc(50% + 4rem) center;
   background-size: cover;
@@ -333,6 +332,63 @@ header.masthead .masterhead-content a {
   padding: 0.25rem;
 }
 
+header.masthead .hidden-sm-down {
+  display: none;
+}
+
+header.masthead .hidden-md-up {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  header.masthead {
+    position: relative;
+    height: 480px;
+    background-image: none;
+  }
+  header.masthead .slick-prev,
+  header.masthead .slick-next {
+    position: absolute;
+    z-index: 11;
+    top: 40vh;
+  }
+  header.masthead .slick-prev {
+    left: 10px;
+  }
+  header.masthead .slick-next {
+    right: 10px;
+  }
+  header.masthead .main-header {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+  }
+  header.masthead .masterhead-carousel {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  header.masthead .masterhead-carousel .slide {
+    background-size: cover;
+    background-position: center bottom;
+    height: 420px;
+  }
+  header.masthead .masterhead-carousel .slide-1 {
+    background-image: url("../img/main_banner_part1.jpg");
+  }
+  header.masthead .masterhead-carousel .slide-2 {
+    background-image: url("../img/main_banner_part2.jpg");
+  }
+  header.masthead .masterhead-carousel .slide-3 {
+    background-image: url("../img/main_banner_part3.jpg");
+  }
+  header.masthead .masterhead-carousel .slide-4 {
+    background-image: url("../img/main_banner_part4.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   header.masthead {
     margin-top: 90px;
@@ -356,6 +412,12 @@ header.masthead .masterhead-content a {
   header.masthead .main-header {
     padding-top: 2rem;
     font-size: 2.95rem;
+  }
+  header.masthead .hidden-md-up {
+    display: none;
+  }
+  header.masthead .hidden-sm-down {
+    display: block;
   }
 }
 
@@ -583,6 +645,61 @@ table {
   margin: 20px;
 }
 
+#product-main {
+  background: #e7e7e7;
+  color: black;
+  padding: 40px 1rem;
+  margin-top: -8px;
+}
+
+#product-main .product-logo {
+  margin-bottom: 1rem;
+}
+
+#product-main .description {
+  text-align: center;
+}
+
+#product-main .description p {
+  font-size: 1.25rem;
+}
+
+#product-main .description .btn {
+  margin: 1rem auto;
+}
+
+#product-main .description .product-buttons {
+  margin-top: 2rem;
+}
+
+#product-main .product-sections {
+  margin-top: 3rem;
+}
+
+#product-main .product-sections .columns {
+  margin-top: 1.2rem;
+}
+
+#product-main .product-sections .columns .product-advantage .icon {
+  position: absolute;
+  left: -30px;
+  margin-top: 4px;
+  width: 35px;
+}
+
+#product-main .product-sections .columns .product-advantage .icon img {
+  width: 35px;
+}
+
+@media (max-width: 767px) {
+  #product-main .product-sections .columns .product-advantage {
+    padding-left: 50px;
+  }
+  #product-main .product-sections .columns .product-advantage .icon {
+    left: 10px;
+  }
+}
+
 section.custom {
   position: relative;
   display: -webkit-box;
@@ -655,6 +772,8 @@ section.contact .contact-links {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 section.contact .contact-links div {

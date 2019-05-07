@@ -2,15 +2,16 @@
 header.masthead {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
     background-image: url('../img/main_sushi_banner.jpg');
     background-position: calc(50% + 4rem) center;
     background-size: cover;
+
     .navbar-brand {
         img {
             max-width: 310px;
         }
     }
+
     .main-header {
         padding-top: 5rem;
         font-size: 1.5rem;
@@ -18,6 +19,7 @@ header.masthead {
         color: white;
         display: block;
     }
+
     .masterhead-content {
         width: 18rem;
         right: 1rem;
@@ -29,6 +31,7 @@ header.masthead {
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
+
         a {
             display: block;
             font-size: 1.2rem;
@@ -41,29 +44,111 @@ header.masthead {
             padding: 0.25rem;
         }
     }
+
+    .hidden-sm-down {
+        display: none;
+    }
+
+    .hidden-md-up {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        position: relative;
+        height: 480px;
+        background-image: none;
+
+
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            z-index: 11;
+            top: 40vh;
+        }
+
+        .slick-prev {
+            left: 10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        .main-header {
+            position: absolute;
+            top: 50px;
+            z-index: 10;
+        }
+
+        .masterhead-carousel {
+            height: 80%;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            .slide {
+                background-size: cover;
+                background-position: center bottom;
+                height: 420px;
+            }
+
+            .slide-1 {
+                background-image: url('../img/main_banner_part1.jpg');
+            }
+
+            .slide-2 {
+                background-image: url('../img/main_banner_part2.jpg');
+            }
+
+            .slide-3 {
+                background-image: url('../img/main_banner_part3.jpg');
+            }
+
+            .slide-4 {
+                background-image: url('../img/main_banner_part4.jpg');
+            }
+        }
+    }
+
     @media (min-width: 768px) {
+
         margin-top: 90px;
         min-height: 460px;
         height: auto;
+
+
         .masterhead-content {
             position: absolute;
+
             .main-header {
                 font-size: 2.75rem;
                 text-align: left;
             }
         }
+
         .header-content {
             margin-bottom: 0;
             text-align: left;
         }
+
         .device-container {
             img {
                 max-width: 600px;
             }
         }
+
         .main-header {
             padding-top: 2rem;
             font-size: 2.95rem;
+        }
+
+        .hidden-md-up {
+            display: none;
+        }
+
+        .hidden-sm-down {
+            display: block;
         }
     }
 }

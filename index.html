@@ -19,6 +19,25 @@
 
   <!-- Custom styles for this template -->
   <link href="css/styles.min.css" rel="stylesheet" />
+
+  <!-- Hotjar Tracking Code for http://www.box4sushi.com -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1301907,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+  </script>
 </head>
 
 <body id="page-top">
@@ -27,7 +46,7 @@
     <div class="xs-hidden" id="contact-strip">
       <div class="container d-flex justify-content-between">
         <a href="tel:0048531117395"><i class="icon-phone"></i> +48 531 117 395</a>
-        <a href="mailto:kontakt@box4sushi.pl"><i class="icon-envelope"></i> kontakt@box4sushi.pl</a>
+        <a href="mailto:contact@box4sushi.com"><i class="icon-envelope"></i> contact@box4sushi.com</a>
       </div>
     </div>
     <div class="container">
@@ -62,8 +81,8 @@
             <a href="tel:+48-531-117-395" target="_blank"></a><i class="icon-phone"></i> +48-531-117-395</a>
           </div>
           <div>
-            <a href="mailto:kontakt@box4sushi.pl" target="_blank"></a><i class="icon-envelope"></i>
-            kontakt@box4sushi.pl
+            <a href="mailto:contact@box4sushi.com" target="_blank"></a><i class="icon-envelope"></i>
+            contact@box4sushi.com
             </a>
           </div>
         </div>
@@ -73,18 +92,24 @@
   <header class="masthead">
     <div class="container">
       <h1 class="main-header">Papierowe pudełka na sushi dla Twojego biznesu</h1>
-      <div class="masterhead-content">
+      <div class="masterhead-content hidden-sm-down">
         <p>Zapewniamy kompleksową usługę, począwszy od pomysłu i projektu, poprzez produkcję,<br /> aż po
           dostawę i logistykę
         </p>
         <a class="js-scroll-trigger" href="#product-main">Pudełka na sushi</a>
         <a class="js-scroll-trigger" href="#products">Produkty uzupełniające</a>
         <a class="js-scroll-trigger" href="#products-nologo">Produkty bez logo</a>
-        </d>
+
+      </div>
+      <div class="masterhead-carousel hidden-md-up slickMobile">
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+        <div class="slide slide-4"></div>
       </div>
   </header>
   <section class="product-main" id="product-main">
-    <div class="container">
+    <div class="container product-banner">
       <div class="row d-flex align-items-center">
         <div class="col-md-6 description">
           <div class="mt-4 mb-4">
@@ -110,18 +135,21 @@
     <div class="container product-sections">
       <h2>Dlaczego BOX4SUSHI?</h2>
       <div class="row d-flex align-items-left columns">
-        <div class="col-md">
+        <div class="col-md product-advantage">
+          <div class="icon"><img src="./img/megaphone.svg"></div>
           <h4>Opakowanie, <br />które jest reklamą</h4>
           <p>Interesujące opakowania kreują efekt "wow" wśród konsumentów, jednocześnie zachęcając do
             dzielenia się wrażeniami w mediach społecznościowych. <br /> Taka forma rekomendacji buduje
             rozpoznawalność i przywiązanie do marki.</p>
         </div>
-        <div class="col-md">
+        <div class="col-md product-advantage">
+          <div class="icon"><img src="./img/budding-leaves.svg"></div>
           <h4>Opakowanie, <br />KTÓRE OGRANICZA ZUŻYCIE PLASTIKU</h4>
           <p>Jeżeli istnieje alternatywa dla plastiku, dlaczego jej nie wykorzystać?<br /> Wobec rosnącej
             świadomości konsumentów, krok w stronę ekologii zostanie dostrzeżony i doceniony. </p>
         </div>
-        <div class="col-md">
+        <div class="col-md product-advantage">
+          <div class="icon"><img src="./img/medal.svg"></div>
           <h4>Opakowanie, <br />KTÓRE SPEŁNIA NAJWYŻSZE STANDARDY</h4>
           <p>Tylko bezpieczne materiały trafiaja do naszych produktów. Przestrzeganie procedur jakościowych
             gwarantuje spełnianie najwyższych standardów jakości i bezpieczeńmstwa żywności. </p>
@@ -309,12 +337,12 @@
         my przykładamy szczególną wagę do znajdywania takich rozwiązań, które będą w 100% odpowiednie dla
         Ciebie.</p>
       <div class="mb-4 contact-links">
-        <div><i class="icon-envelope"></i> <a href="mailto:kontakt@box4sushi.pl">kontakt@box4sushi.pl</a></div>
+        <div><i class="icon-envelope"></i> <a href="mailto:contact@box4sushi.com">contact@box4sushi.com</a></div>
         <div id="linkPhone"><i class="icon-phone"></i> <a href="tel:0048531117395"> +48 531 117 395</a></div>
       </div>
       <p class="text-center col-md-6 offset-md-3">Chcesz zamówić opakowania lub zapytać o szczegóły? Napisz do nas
         - skontaktujemy się z Tobą w ciągu 24 godzin.</p>
-      <form id="contact-form" class="col-md-8 offset-md-2" method="post" action="contact.php" role="form">
+      <form id="contact-form" class="col-md-8 offset-md-2" method="post" role="form">
         <div class="messages"></div>
 
         <div class="controls">
@@ -322,21 +350,21 @@
             <div class="col-md-4">
               <div class="form-group">
                 <input id="form_name" type="text" placeholder="Imię" name="name" class="form-control"
-                  required="required" data-error="Podaj imię." />
+                  data-error="Pole imię jest wymagane." required="required" />
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <input id="form_name" type="text" placeholder="Telefon" name="name" class="form-control"
-                  required="required" data-error="Numer telefonu jest obowiązkowy" />
+                <input id="form_phone" type="text" placeholder="Telefon" name="phone" class="form-control"
+                  data-error="Numer telefonu jest obowiązkowy" />
                 <div class="help-block with-errors"></div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <input id="form_email" type="email" name="email" placeholder="Email" class="form-control"
-                  required="required" data-error="Podaj e-mail." />
+                  required="required" data-error="Pole email jest wymagane." />
                 <div class="help-block with-errors"></div>
               </div>
             </div>
@@ -345,18 +373,18 @@
             <div class="col-md-12">
               <div class="form-group">
                 <textarea id="form_message" placeholder="Wiadomość" name="message" class="form-control" rows="4"
-                  required="required" data-error="Wpisz wiadomość."></textarea>
+                  data-error="Wpisz wiadomość."></textarea>
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="contactCheckbox">
+                <input type="checkbox" class="form-check-input" id="contactCheckbox" name="contactCheckbox">
                 <label class="form-check-label" for="contactCheckbox">Nie mam czasu, zadzwońcie do mnie :)</label>
               </div>
             </div>
             <div class="col-md-12 mt-4">
-              <a href="#" class="btn btn-primary js-scroll-trigger">
+              <button type="submit" class="btn btn-primary">
                 Zamów lub zapytaj o szczegóły
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -368,14 +396,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 logo-area">
-          <img src="./img/fastpack_transparent.png" class="img-fluid fp-logo">
+          <a href="http://www.fastpack.dk/pl" target="_blank">
+            <img src="./img/fastpack_transparent.png" class="img-fluid fp-logo">
+          </a>
         </div>
 
         <div class="col-md-6 fastpack-copy">
           <p>Box4Sushi jest częścią Fastpack - firmy oferującej projektowanie, produkcję oraz dostawę opakowań dla
             gastronomii.</p>
-          <p>W swojej ofercie posiadamy całą gamę papierowych toreb, pudełek oraz wszelkiego rodzaju opakowań, jakie
-            możesz sobie wybrać.</p>
+          <p>W swojej ofercie posiadamy całą gamę papierowych toreb, pudełek oraz wszelkiego rodzaju opakowań jakie
+            możesz sobie wyobrazić.</p>
           <p>Dostarczamy opakowania gastronomiczne spełniające najwyżesze standardy jakości i bezpieczeńmstwa żywności.
           </p>
         </div>
@@ -416,7 +446,7 @@
       <div class="row">
         <div class="container">
           <span>
-            &copy; <a href="http://www.fastpack.dk/pl">Fastpack.dk</a>
+            &copy; <a href="http://www.fastpack.dk/pl" target="_blank">Fastpack.dk</a>
             <script>
               document.write(new Date().getFullYear());
 
@@ -456,7 +486,7 @@
     integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script src="contact.js"></script>
   <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
+  <script src="js/new-age.js"></script>
 
 </body>
 
