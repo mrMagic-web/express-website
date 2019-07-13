@@ -15,11 +15,9 @@ section.contact {
   }
 
   .disabled {
-    background-color: $theme-secondary;
-
-    &:hover {
-      background-color: white;
-    }
+    border-color: red;
+    color: #fff;
+    background-color: red;
   }
 
   #contact-form {

@@ -753,11 +753,9 @@ section.contact h2 {
 }
 
 section.contact .disabled {
-  background-color: #00adef;
-}
-
-section.contact .disabled:hover {
-  background-color: white;
+  border-color: red;
+  color: #fff;
+  background-color: red;
 }
 
 section.contact #contact-form input,

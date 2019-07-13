@@ -29,13 +29,9 @@
 
   $('#contactCheckbox').on("click", function () {
     if ($('#contactCheckbox').prop('checked')) {
-      $('#linkPhone').addClass('highlight-phone');
       $("#form_phone").prop('required', 'required');
       $("#form_email").prop('required', '');
       $("#form_name").prop('required', '');
-      setTimeout(function () {
-        $('#linkPhone').removeClass('highlight-phone');
-      }, 1000);
     } else {
       $("#form_phone").prop('required', '');
       $("#form_email").prop('required', 'required');
