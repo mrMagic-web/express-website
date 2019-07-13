@@ -26,19 +26,6 @@
     $(".navbar-collapse").collapse("hide");
   });
 
-
-  $('#contactCheckbox').on("click", function () {
-    if ($('#contactCheckbox').prop('checked')) {
-      $("#form_phone").prop('required', 'required');
-      $("#form_email").prop('required', '');
-      $("#form_name").prop('required', '');
-    } else {
-      $("#form_phone").prop('required', '');
-      $("#form_email").prop('required', 'required');
-      $("#form_name").prop('required', 'required');
-    }
-  });
-
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
     target: "#mainNav",
